@@ -30,10 +30,20 @@ nav{
   z-index: 998;
   transition: all 0.3s ease;
   font-family: 'Ubuntu', sans-serif;
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  backface-visibility: 45%;
+  backdrop-filter: blur(40px);
+  width: 100%;
+  padding: 10px;
+
 }
 nav.sticky{
-  background: #4070f4;
+  background: #2856cc;
   padding: 13px 0;
+  
+ 
 }
 nav .navbar{
   width: 90%;
@@ -41,11 +51,13 @@ nav .navbar{
   justify-content: space-between;
   align-items: center;
   margin: auto;
+
+  
 }
 nav .navbar .logo a{
   font-weight: 500;
   font-size: 35px;
-  color: #4070f4;
+  color: #1c55f4;
 }
 nav.sticky .navbar .logo a{
   color: #fff;
@@ -53,6 +65,7 @@ nav.sticky .navbar .logo a{
 nav .navbar .menu{
   display: flex;
   position: relative;
+
 }
 nav .navbar .menu li{
   list-style: none;
@@ -72,7 +85,7 @@ nav.sticky .menu a{
   color: #FFF;
 }
 nav.sticky .menu a:hover{
-  color: #0E2431;
+  color: #3a799e;
 }
 .navbar .media-icons a{
   color: #4070f4;
@@ -113,6 +126,7 @@ nav.sticky .menu-btn{
   background-attachment: fixed;
   font-family: 'Ubuntu', sans-serif;
   background-color: rgb(0, 0, 0);
+  opacity: 83%;
 }
 .home .home-content{
   width: 90%;
@@ -135,12 +149,12 @@ nav.sticky .menu-btn{
 .home .text-three{
   font-size: 40px;
   margin: 5px 0;
-  color: #4070f4;
+  color: #d5dffa;
 }
 .home .text-four{
   font-size: 23px;
   margin: 5px 0;
-  color: #0E2431;
+  color: #c7eaff;
 }
 .home .button{
   margin: 14px 0;
@@ -184,7 +198,7 @@ section .title{
   margin-bottom: 40px;
 }
 section .title span{
-  color: #0E2431;
+  color: #4070f4;
   font-size: 30px;
   font-weight: 600;
   position: relative;
@@ -219,14 +233,14 @@ section .title span::after{
   width: 55%;
 }
 section  .topic{
-  color: #0E2431;
+  color: #698dfb;
   font-size: 25px;
   font-weight: 500;
   margin-bottom: 10px;
 }
 .about-details .right p{
   text-align: justify;
-  color: #0E2431;
+  color: #f7f9fa;
 }
 section .button{
   margin: 16px 0;
@@ -497,4 +511,12 @@ footer .text span a:hover{
     font-size: 50px;
     color: #4070f4;
   }
+}
+
+body {
+  background-image: url('tom-morel-ktVazL5c7FM-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 90%;
+  background-size: cover;
 }
